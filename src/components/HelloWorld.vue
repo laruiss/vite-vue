@@ -6,7 +6,7 @@
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
   </p>
 
-  <button @click="state.count++">count is: {{ state.count }}</button>
+  <button @click="state.count++" class="bg-green-400  py-2  px-3  text-white  rounded">count is: {{ state.count }}</button>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.

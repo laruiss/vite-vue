@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="@/assets/logo.png" /> <!-- @ is an alias for /src -->
+  <div class="text-center">
+    <img alt="Vue logo" src="@/assets/logo.png" class="mx-auto" /> <!-- @ is an alias for /src -->
     <HelloWorld msg="Welcome to Your Vue.js App powered by Vite!"/>
   </div>
 </template>
