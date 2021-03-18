@@ -1,12 +1,13 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img alt="Vue logo" src="@/assets/logo.png" /> <!-- @ is an alias for /src -->
     <HelloWorld msg="Welcome to Your Vue.js App powered by Vite!"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld.vue'
+// @ is an alias for /src, See vite.config.js and https://vitejs.dev/config/#resolve-alias
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
