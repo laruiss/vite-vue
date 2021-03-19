@@ -1,0 +1,9 @@
+{
+  "pluginsFile": "tests/e2e/plugins/index.js",
+  "fileServerFolder": "dist",
+  "numTestsKeptInMemory": 3,
+  "port": 9090,
+  "cypress-watch-and-reload": {
+    "watch": "dist/**/*"
+  }
+}
