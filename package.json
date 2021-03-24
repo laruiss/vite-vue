@@ -11,6 +11,8 @@
     "watch:e2e": "run-p build-on-change serve cypress",
     "test:e2e-ci": "cypress run",
     "test": "jest src",
+    "prepreview": "npm run build",
+    "preview": "npm run serve",
     "serve": "vite preview"
   },
   "dependencies": {
