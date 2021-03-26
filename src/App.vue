@@ -4,8 +4,18 @@
     <span class="mx-1">|</span>
     <router-link to="/about">About</router-link>
   </div>
+  <ReloadPrompt />
   <router-view />
 </template>
+
+<script setup>
+import { useTimeAgo } from '@vueuse/core'
+import ReloadPrompt from '@/components/ReloadPrompt.vue'
+
+// replaced dynamicaly
+const date = '__DATE__'
+const timeAgo = useTimeAgo(date)
+</script>
 
 <style>
 #app {

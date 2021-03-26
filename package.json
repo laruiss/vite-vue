@@ -27,10 +27,12 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.13.12",
+    "@rollup/plugin-replace": "^2.4.1",
     "@types/jest": "^26.0.21",
     "@vitejs/plugin-vue": "^1.1.5",
-    "@vue/compiler-sfc": "^3.0.5",
+    "@vue/compiler-sfc": "^3.0.7",
     "@vue/test-utils": "^2.0.0-rc.4",
+    "@vueuse/core": "^4.6.0",
     "autoprefixer": "^10.2.5",
     "babel-eslint": "^10.1.0",
     "babel-plugin-transform-import-meta": "^1.0.1",
@@ -52,6 +54,7 @@
     "tailwindcss": "^2.0.4",
     "ts-jest": "^26.5.4",
     "vite": "^2.1.0",
+    "vite-plugin-pwa": "^0.6.3",
     "vue-jest": "^5.0.0-alpha.7"
   }
 }

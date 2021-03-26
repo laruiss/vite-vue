@@ -9,6 +9,7 @@ This is a work in progress. Any comment is welcome.
 - [Vuex 4](https://next.vuex.vuejs.org/)
 - [Vue-router 4](https://next.vue-router.vuejs.org/)
 - [Vite 2](https://vitejs.dev/)
+- [Vite PWA plugin](https://github.com/antfu/vite-plugin-pwa)
 - [ESlint](https://eslint.org/) with [standardjs](https://standardjs.com/) [config](https://www.npmjs.com/package/eslint-config-standard) (with one modification: [`"comma-dangle": [2, "always-multiline"]`](https://eslint.org/docs/rules/comma-dangle#always-multiline))
 - [FontAwesome](https://fontawesome.com/) (with [vue-fontawesome@next](https://github.com/FortAwesome/vue-fontawesome))
 - [Tailwind](https://tailwindcss.com/) (with [@tailwind/jit](https://www.youtube.com/watch?app=desktop&v=3O_3X7InOw8))
