@@ -30,18 +30,18 @@ const close = async () => {
     </div>
     <button
       v-if="needRefresh"
-      @click="updateServiceWorker()"
       class="bg-[#41B883]  rounded  px-2  py-1  text-white"
+      @click="updateServiceWorker()"
     >
       Reload
-      <fa-icon icon="sync-alt"/>
+      <fa-icon icon="sync-alt" />
     </button>
     <button
-      @click="close"
       class="rounded  px-2  py-1"
+      @click="close"
     >
       Close
-      <fa-icon icon="times"/>
+      <fa-icon icon="times" />
     </button>
   </div>
 </template>

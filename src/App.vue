@@ -1,8 +1,15 @@
 <template>
-  <div id="nav" class="flex  justify-center  text-lg  font-bold">
-    <router-link to="/">Home</router-link>
+  <div
+    id="nav"
+    class="flex  justify-center  text-lg  font-bold"
+  >
+    <router-link to="/">
+      Home
+    </router-link>
     <span class="mx-1">|</span>
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">
+      About
+    </router-link>
   </div>
   <ReloadPrompt />
   <router-view />
