@@ -32,6 +32,7 @@
     "@vitejs/plugin-vue": "^1.9.4",
     "@vue/compiler-sfc": "^3.2.21",
     "@vue/test-utils": "^2.0.0-rc.16",
+    "@vue/vue3-jest": "^27.0.0-alpha.3",
     "@vueuse/core": "^5.3.0",
     "autoprefixer": "^10.4.0",
     "babel-eslint": "^10.1.0",
@@ -53,7 +54,6 @@
     "postcss": "^8.3.11",
     "ts-jest": "^27.0.7",
     "vite": "^2.6.13",
-    "vite-plugin-pwa": "^0.11.3",
-    "@vue/vue3-jest": "^27.0.0-alpha.3"
+    "vite-plugin-pwa": "^0.11.3"
   }
 }
