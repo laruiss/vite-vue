@@ -1,5 +1,10 @@
 module.exports = {
   root: true,
+  globals: {
+    defineProps: 'read-only',
+    defineEmits: 'read-only',
+    defineExpose: 'read-only',
+  },
   env: {
     node: true,
     jest: true,
