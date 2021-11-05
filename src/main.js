@@ -1,7 +1,6 @@
+import 'virtual:windi.css'
 import { createApp } from 'vue'
 import { FontAwesomeIcon } from './plugins/fontawesome'
-
-import './main.css'
 
 import App from './App.vue'
 import router from './router'
