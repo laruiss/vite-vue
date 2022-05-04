@@ -20,7 +20,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/vue-fontawesome": "^3.0.0-5",
-    "tailwindcss": "^2.2.19",
     "vue": "^3.2.21",
     "vue-router": "^4.0.12",
     "vuex": "^4.0.2"
@@ -55,6 +54,7 @@
     "ts-jest": "^27.0.7",
     "vite": "^2.6.13",
     "vite-plugin-pwa": "^0.11.3",
-    "vite-plugin-windicss": "^1.8.4"
+    "vite-plugin-windicss": "^1.8.4",
+    "windicss": "^3.5.1"
   }
 }

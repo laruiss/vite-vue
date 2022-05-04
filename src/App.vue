@@ -6,7 +6,7 @@
     <router-link to="/">
       Home
     </router-link>
-    <span class="mx-1">|</span>
+    <span class="mx-2">|</span>
     <router-link to="/about">
       About
     </router-link>
