@@ -10,7 +10,7 @@
     "test:e2e": "run-s build cypress",
     "watch:e2e": "run-p build-on-change serve cypress",
     "test:e2e-ci": "cypress run",
-    "test": "jest src",
+    "test": "vitest",
     "prepreview": "npm run build",
     "preview": "npm run serve",
     "serve": "vite preview"
@@ -25,17 +25,14 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.16.0",
     "@rollup/plugin-replace": "^3.0.0",
-    "@types/jest": "^27.0.2",
-    "@vitejs/plugin-vue": "^1.9.4",
-    "@vue/compiler-sfc": "^3.2.21",
-    "@vue/test-utils": "^2.0.0-rc.16",
-    "@vue/vue3-jest": "^27.0.0-alpha.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/vue": "^6.5.1",
+    "@vitejs/plugin-vue": "^2.3.2",
+    "@vue/compiler-sfc": "^3.2.33",
+    "@vue/test-utils": "2.0.0-rc.21",
     "@vueuse/core": "^5.3.0",
     "autoprefixer": "^10.4.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-transform-import-meta": "^2.1.0",
     "cypress": "^8.7.0",
     "cypress-watch-and-reload": "^1.5.4",
     "debounce": "^1.2.1",
@@ -47,14 +44,13 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-vue": "^7.20.0",
-    "jest": "^27.3.1",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
     "postcss": "^8.3.11",
-    "ts-jest": "^27.0.7",
     "vite": "^2.6.13",
     "vite-plugin-pwa": "^0.11.3",
     "vite-plugin-windicss": "^1.8.4",
+    "vitest": "^0.10.2",
     "windicss": "^3.5.1"
   }
 }

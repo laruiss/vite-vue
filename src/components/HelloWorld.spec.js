@@ -1,11 +1,14 @@
-import { mount } from '@vue/test-utils'
+import { render } from '@testing-library/vue'
+
 import HelloWorld from './HelloWorld.vue'
 
 describe('HelloWorld', () => {
   it('should display header text', () => {
     const msg = 'Hello Vue 3'
-    const wrapper = mount(HelloWorld, { props: { msg } })
+    const {getByText} = render(HelloWorld, { props: { msg } })
 
-    expect(wrapper.find('h1').text()).toEqual(msg)
+    const h1 = getByText(msg)
+
+    expect(h1.tagName).toEqual('H1')
   })
 })

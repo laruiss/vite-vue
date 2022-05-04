@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 import replace from '@rollup/plugin-replace'
@@ -22,5 +22,14 @@ export default defineConfig({
     alias: {
       '@': '/src',
     },
+  },
+  test: {
+    globals: true,
+    // environment: 'happy-dom',
+    environment: 'jsdom',
+    testTimeout: 2000,
+    setupFiles: [
+      './tests/unit/vitest-setup.js',
+    ],
   },
 })

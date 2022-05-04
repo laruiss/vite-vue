@@ -1,3 +1,26 @@
+<script setup>
+import { useTimeAgo } from '@vueuse/core'
+import { ref } from 'vue'
+import { useRegisterSW } from 'virtual:pwa-register/vue'
+
+import ReloadPrompt from '@/components/ReloadPrompt.vue'
+
+// replaced dynamicaly
+const date = '__DATE__'
+const timeAgo = useTimeAgo(date)
+
+const {
+  offlineReady,
+  needRefresh,
+  updateServiceWorker,
+} = useRegisterSW()
+
+const close = async () => {
+  offlineReady.value = false
+  needRefresh.value = false
+}
+</script>
+
 <template>
   <div
     id="nav"
@@ -11,18 +34,14 @@
       About
     </router-link>
   </div>
-  <ReloadPrompt />
+  <ReloadPrompt
+    :offline-ready="offlineReady"
+    :need-refresh="needRefresh"
+    @close="close()"
+    @update-service-worker="updateServiceWorker()"
+  />
   <router-view />
 </template>
-
-<script setup>
-import { useTimeAgo } from '@vueuse/core'
-import ReloadPrompt from '@/components/ReloadPrompt.vue'
-
-// replaced dynamicaly
-const date = '__DATE__'
-const timeAgo = useTimeAgo(date)
-</script>
 
 <style>
 #app {
