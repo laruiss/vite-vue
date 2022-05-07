@@ -31,7 +31,7 @@ defineEmits(['close', 'updateServiceWorker'])
         Recharger
       </button>
       <button
-        class="button"
+        class="button  secondary"
         @click="$emit('close')"
       >
         Fermer

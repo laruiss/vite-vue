@@ -16,7 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-import 'cypress-watch-and-reload/support'
-
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+import 'cypress-watch-and-reload/support'

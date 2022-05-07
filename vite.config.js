@@ -1,3 +1,5 @@
+import { fileURLToPath, URL } from 'url'
+
 import { defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -6,6 +8,7 @@ import WindiCSS from 'vite-plugin-windicss'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.BASE_URL || '/',
   plugins: [
     vue(),
     WindiCSS(),
@@ -17,10 +20,9 @@ export default defineConfig({
       __DATE__: new Date().toISOString(),
     }),
   ],
-  base: process.env.BASE_URL || '/',
   resolve: {
     alias: {
-      '@': '/src',
+      '@':  fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
   test: {

@@ -1,9 +1,15 @@
 {
-  "pluginsFile": "tests/e2e/plugins/index.js",
-  "fileServerFolder": "dist",
-  "numTestsKeptInMemory": 3,
-  "port": 9090,
+  "baseUrl": "http://localhost:5050",
+  "testFiles": "**/*.{cy,e2e}.js",
+  "pluginsFile": "cypress/plugins/index.js",
+  "video": false,
   "cypress-watch-and-reload": {
     "watch": "dist/**/*"
+  },
+  "component": {
+    "componentFolder": "src",
+    "testFiles": "**/*.{ct,cy,e2e}.{js,ts,jsx,tsx}",
+    "viewportHeight": 500,
+    "viewportWidth": 1000
   }
 }

@@ -22,6 +22,7 @@ const close = async () => {
 </script>
 
 <template>
+  <h1>App Vue3+Vite</h1>
   <div
     id="nav"
     class="flex  justify-center  text-lg  font-bold"

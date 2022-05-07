@@ -2,10 +2,12 @@
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "sourceMap": true,
   },
   "exclude": ["node_modules"]
 }
